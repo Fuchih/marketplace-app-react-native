@@ -1,10 +1,10 @@
 import { StyleSheet, TouchableOpacity } from 'react-native'
 import AppText from './AppText'
 
-export default function PickerItem({ label, onPress }) {
+export default function PickerItem({ item, onPress }) {
   return (
     <TouchableOpacity onPress={onPress} style={styles.text}>
-      <AppText>{label}</AppText>
+      <AppText>{item.label}</AppText>
     </TouchableOpacity>
   )
 }
